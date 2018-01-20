@@ -1,0 +1,33 @@
+Date: 1/17/18
+
+Why study operationg systems
+
+    Be a better developer
+    understand what can and what cannot be done
+    understand and imporve prgram performance
+    understand how/why some os can be better than some others
+
+What is an OS?
+
+ok answer: its the software layer between the applications and the hardware
+
+better: all the code i dont have to write when I develop software
+
+WRONG: It is the one program that runs at all times and watches everything
+        this is wrong because:
+            the OS is not a running program
+            there is no need to reserve a CPU core for it 
+
+What is an OS?
+    
+    The OS is a Resource Abstractor: defines a set of logical
+    resources that correspond to hardware resources, and well-defined
+    operations on these logical resources
+        CPU --> Running programs
+        Memory (DRAM/SDRAM/Futrue RAM -> REad Write..
+        Storage Medium HDD SSD --> Filse
+
+    The OS is a resource Allocatior it decides (which running program)
+    gets how much.
+
+

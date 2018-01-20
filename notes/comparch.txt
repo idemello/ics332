@@ -1,0 +1,33 @@
+Date 1/17/18
+
+Multiple levels of cache
+L1 , L2 , L3
+
+size factor L1 < L2 < L3. 
+
+L1 closest to CPU data cache/instructions cache
+
+Chunks of data are brought from far-away memory and are copied
+and kept around in nearby caches
+    same data exist in mutiple levels of of memory at once
+    leads to problems (may not be discussed)
+
+
+DIRECT MEMORY ACCESS (DMA)
+
+When copying large chunks of data in the Von-Neumann model, the CPU has to be involved for each copy operation.
+memory copies take a long time, even using caches.
+DMA copies directly to memory
+
+DMA is used on all modern computers
+
+DMA uses memory bus
+while DMA is active CPU likely also uses the mory bus
+
+CURRENT ARCHITECTURES
+
+Because constructors cannot increase clock rate further
+current CPUs are multi-core
+
+multi core is a good idea not because more cores are better,
+but because more cores are more efficient due to power/heat issues. 
