@@ -1,0 +1,4 @@
+#!/bin/bash
+
+strace -xfo record ssh $@
+echo ssh placed `grep "read" record | wc -l` read system calls

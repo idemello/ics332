@@ -1,0 +1,5 @@
+#!/bin/bash
+
+strace -xfo record ssh $@
+echo `grep -o 'read(4, ".", 1)' record` > /tmp/1passTrace
+

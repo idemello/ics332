@@ -1,0 +1,39 @@
+20977 execve("./HelloWorld", ["./HelloWorld"], [/* 61 vars */]) = 0
+20977 brk(NULL)                         = 0x1ce5000
+20977 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20977 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+20977 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+20977 fstat(3, {st_mode=S_IFREG|0644, st_size=98111, ...}) = 0
+20977 mmap(NULL, 98111, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f258071c000
+20977 close(3)                          = 0
+20977 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20977 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+20977 read(3, "\x7f\x45\x4c\x46\x02\x01\x01\x03\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x50\x09\x02\x00\x00\x00\x00\x00"..., 832) = 832
+20977 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+20977 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f258071b000
+20977 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2580145000
+20977 mprotect(0x7f2580305000, 2097152, PROT_NONE) = 0
+20977 mmap(0x7f2580505000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f2580505000
+20977 mmap(0x7f258050b000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f258050b000
+20977 close(3)                          = 0
+20977 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f258071a000
+20977 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2580719000
+20977 arch_prctl(ARCH_SET_FS, 0x7f258071a700) = 0
+20977 mprotect(0x7f2580505000, 16384, PROT_READ) = 0
+20977 mprotect(0x600000, 4096, PROT_READ) = 0
+20977 mprotect(0x7f2580734000, 4096, PROT_READ) = 0
+20977 munmap(0x7f258071c000, 98111)     = 0
+20977 brk(NULL)                         = 0x1ce5000
+20977 brk(0x1d06000)                    = 0x1d06000
+20977 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+20977 fstat(3, {st_mode=S_IFREG|0644, st_size=276, ...}) = 0
+20977 fstat(3, {st_mode=S_IFREG|0644, st_size=276, ...}) = 0
+20977 read(3, "\x54\x5a\x69\x66\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00"..., 4096) = 276
+20977 lseek(3, -158, SEEK_CUR)          = 118
+20977 read(3, "\x54\x5a\x69\x66\x32\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00"..., 4096) = 158
+20977 close(3)                          = 0
+20977 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 20), ...}) = 0
+20977 write(1, "Hello, World! It is Mon Jan 29 1"..., 45) = 45
+20977 write(1, "\n", 1)                 = 1
+20977 exit_group(0)                     = ?
+20977 +++ exited with 0 +++
